@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      HTTP_AUTH_LOGIN: test
+      HTTP_AUTH_PASSWORD: test
+      OAUTH2_CLIENT_ID: bef0cd47ac8dec84051f
+      OAUTH2_CLIENT_SECRET: d6fc6c0e4381c51e5bc8ef8993c9f15d77852743
+      OAUTH2_COOKIE_SECRET: Sm84cW4rVXpnRUZ1RElCUGVOVXJWUT09
+      OAUTH2_EMAIL_DOMAIN: "*"
+      OAUTH2_PROVIDER: github
+      OAUTH2_FORCE_HTTPS: "false"
+
+
